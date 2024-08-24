@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>array index</title>
+    </head>
+    <body>
+        <script>
+            let name=[];
+            console.log(name);
+            let course=["javascript","css","html","spring boot"];
+            console.log(course);
+            //array constructor
+            let subject=new Array();
+            //add element in array
+            subject.push("math");
+            console.log(subject);
+            subject.unshift("social science");
+            console.log(subject);
+            
+            let cou_subj=new Array("java","github","react","javacore");
+            console.log(cou_subj);
+            //initiizea array while declaring
+            let arr= new Array(3);
+            arr[0]=100;
+            arr[1]=200;
+            arr[2]=300;
+            arr[3]=400;
+            console.log(arr);
+            console.log(arr[2]);
+            //replacing existing value
+            arr[0]="bootstrapcourse";
+            console.log(arr);
+            //remove element in arry pop() push() and shift() method
+            let courses=["javascript","react","angular","spring"];
+            console.log("orignal array:"+courses);
+
+            let lastelement=courses.pop();
+            console.log("last element remove:"+lastelement);
+
+            let firstelement=courses.shift();
+            console.log("first element remove:"+firstelement);
+
+            courses.splice(1 , 2);//removing two element starting from second position
+          console.log("After removing 2 elements starting from index 1 :"+courses)
+
+ // increse  or decrease array size 
+         let users = ["A" ,"b","c","x","Z","y"];// length is 6
+         console.log(users.length);
+
+         users.length = 10;//increase the array size by setting the
+
+         console.log("after increasing the length of the array "+users);
+
+         users.length = 2;//decreasing the array size by setting the length property
+         console.log("after decreasing the length of the array "+users);
+
+
+         //join method - helps to join two arrays as a string
+         var fruits=["apple","banana","cherry"];
+         console.log(fruits.join('|'));
+         var colors=['red','blue','green'];
+         //concate method 
+         let newArr = fruits.concat(colors);
+         console.log(newArr);
+        </script>
+        
+    
+    </body>
+</html>
